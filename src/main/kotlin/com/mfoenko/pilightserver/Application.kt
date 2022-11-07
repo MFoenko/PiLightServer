@@ -13,7 +13,7 @@ fun main() {
 }
 
 fun Application.module() {
-    configureSockets()
+    val moshi = configureContentNegotiation()
+    configureSockets(moshi)
     configureRouting()
-    configureContentNegotiation()
 }
