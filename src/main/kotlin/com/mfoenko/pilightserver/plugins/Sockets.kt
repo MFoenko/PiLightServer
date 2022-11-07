@@ -1,4 +1,4 @@
-package com.example.plugins
+package com.mfoenko.pilightserver.plugins
 
 import io.ktor.server.routing.*
 import io.ktor.server.websocket.*

@@ -1,5 +1,6 @@
-package com.example.plugins
+package com.mfoenko.pilightserver.plugins
 
+import com.mfoenko.pilightserver.models.req.TestJson
 import io.ktor.server.routing.*
 import io.ktor.http.*
 import io.ktor.server.application.*
@@ -10,7 +11,7 @@ fun Application.configureRouting() {
 
     routing {
         get("/") {
-            call.respondText("Hello World!")
+            call.respond(HttpStatusCode.OK, TestJson(1))
         }
     }
 }
